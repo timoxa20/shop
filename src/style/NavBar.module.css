@@ -1,0 +1,48 @@
+.NavBar {
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.icons{
+    position: relative;
+    margin-left: 15px;
+}
+
+.NavBarImages {
+    position: relative;
+}
+
+.NavBarBasketCount{
+    position: absolute;
+    width: 20px;
+    right: -8px;
+    top: 21px;
+    color: #fff;
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 50%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    font-size: 10px;
+}
+
+.NavBarFavoritCount{
+    position: absolute;
+    width: 20px;
+    right: -8px;
+    top: 21px;
+    color: #fff;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    font-size: 10px;
+}

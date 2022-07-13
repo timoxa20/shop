@@ -1,0 +1,96 @@
+.Stok{
+    border: 1px solid #CDCDCD;
+    padding: 0;
+}
+.StockTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Stock{
+    background-color: #1C62CD;
+    color: #fff;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.StockBold{
+    position: relative;
+    font-weight: 700;
+    font-size: 27px;
+    color: #1C62CD;
+    padding-right: 30px;
+}
+
+.StockBold::after{
+    content: '';
+    top: 13px;
+    right: 8px;
+    position: absolute;
+    width: 15px;
+    height: 18px;
+    background-image: url('../assets/icons.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.StockNormal{
+    position: relative;
+    text-align: end;
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #C4C4C4;
+}
+
+.StockNormal::after{
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -10px;
+    background-image: url('../assets/iconss.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 9px;
+}
+.StockNormal::before{
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: -18px;
+    position: absolute;
+    width: 89px;
+    height: 19px;
+    background-image: url('../assets/Vector.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.StockBlockImg{
+    text-align: center;
+}
+
+.StockText{
+    font-weight: 700;
+    font-size: 18px;
+    color: #2F3035;
+}
+
+.Text{
+    text-align: center;
+    background: #F0F0F4;
+}
+
+.Text span {
+    font-weight: 700;
+    font-size: 18px;
+    color: #1C62CD
+}

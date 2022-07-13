@@ -1,0 +1,16 @@
+.CardsBascet{
+    transform: translateY(33%);
+}
+
+.CardsBascetText{
+    font-weight: 400;
+    font-size: 18px;
+    color: #2F3035;
+}
+
+.CardsBascetPrice{
+    font-weight: 700;
+    font-size: 30px;
+    color: #2F3035;
+}
+

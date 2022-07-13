@@ -1,0 +1,45 @@
+.Cards {
+    width: 270px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CardsFavorit{
+    background-color: transparent;
+    border: none;
+    align-self: end;
+}
+
+.CardsBasket{
+
+    align-self: end;
+}
+
+.CardsFavorit:hover{
+    background-color: transparent;
+}
+
+.CardsInfo{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.CardsImg{
+    width: 200px;
+    height: 200px;
+}
+
+.CardText{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #2F3035;
+}
+
+.CardsPrice{
+    font-weight: 700;
+    font-size: 30px;
+    color: #2F3035;
+    margin-top: 20px;
+}
