@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { pablicRoutes, privatRoutes,navBar } from '../routs'
+import { pablicRoutes, privatRoutes, navBar, navRouts } from '../routs'
 import { useSelector } from 'react-redux/es/exports'
 
 
@@ -15,13 +15,15 @@ const AppRoures = () => {
         {isAuth && privatRoutes.map(({ path, element }) =>
           <Route key={path} path={path} element={element}></Route>
         )}
-
         {pablicRoutes.map(({ path, element }) =>
           <Route key={path} path={path} element={element}></Route>
         )}
         {navBar.map(({path, element,name}) => 
             <Route key={path} path={path} element={element}></Route>
-            )}
+        )}
+        {navRouts.map(({path, element,name}) => 
+            <Route key={path} path={path} element={element}></Route>
+        )}
       </Routes>
 
   )

@@ -9,7 +9,7 @@ import user from '../assets/user.svg'
 import bascer from '../assets/bascet.svg'
 import style from '../style/NavBar.module.css'
 import { useDispatch } from 'react-redux/es/hooks/useDispatch'
-import {setChetboxAction } from '../store/UserStore'
+import { setChetboxAction } from '../store/UserStore'
 
 
 const NavBar = () => {
@@ -30,71 +30,77 @@ const NavBar = () => {
             <Container>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse >
-                <Container className='d-flex justify-content-between'>
-                    <Nav className='d-flex' >
-                        <div>
-                            <NavLink
-                                className={style.NavBar}
-                                to={SHOP_ROUTE}
-                            >
-                                Магазин
-                            </NavLink>
-                            <NavLink
-                                className={style.NavBar}
-                                to={SHARES_ROUTE}
-                            >
-                                Акций
-                            </NavLink>
-                            <NavLink
-                                className={style.NavBar}
-                                to={DELIVERY_ROUTE}
-                            >
-                                Доставка и оплата
-                            </NavLink>
-                        </div>
-                    </Nav>
-                    <Nav>
-                        <div>
-                            <NavLink
-                                to={SHOP_ROUTE}><Image src={img}></Image>
-                            </NavLink>
-                        </div>
-                    </Nav>
-                    <Nav>
-                        <div>
-                            <NavLink
-                                className={style.icons}
-                                to={FAVORITES_ROUTE}>
-                                <Image
-                                    className={style.NavBarImages}
-                                    src={favorites}>
-                                </Image>
-                                <div
-                                    className={style.NavBarFavoritCount} >{favorit.length}</div>
-                            </NavLink>
-                            {isAuth ?
-                                <Nav>
-                                    <NavLink className={style.icons} to={ADMIN_ROUTE}>Админ панель</NavLink>
+                    <Container className='d-flex justify-content-between'>
+                        <Col md={5}>
+                            <Nav className='d-flex' >
+
+                                <div>
                                     <NavLink
-                                        className={style.icons}
-                                        onClick={() => exitflag()}
-                                        to={SHOP_ROUTE}>Выйти</NavLink>
-                                </Nav>
-                                :
+                                        className={style.NavBar}
+                                        to={SHOP_ROUTE}
+                                    >
+                                        Магазин
+                                    </NavLink>
+                                    <NavLink
+                                        className={style.NavBar}
+                                        to={SHARES_ROUTE}
+                                    >
+                                        Акций
+                                    </NavLink>
+                                    <NavLink
+                                        className={style.NavBar}
+                                        to={DELIVERY_ROUTE}
+                                    >
+                                        Доставка и оплата
+                                    </NavLink>
+                                </div>
+
+                            </Nav>
+                        </Col>
+                        <Col md={4}>
+                            <Nav>
+                                <div>
+                                    <NavLink
+                                        to={SHOP_ROUTE}><Image src={img}></Image>
+                                    </NavLink>
+                                </div>
+                            </Nav>
+                        </Col>
+                        <Nav>
+                            <div>
                                 <NavLink
                                     className={style.icons}
-                                    onClick={() => flag()}
-                                    to={LOGIN_ROUTE}><Image src={user}></Image></NavLink>
-                            }
+                                    to={FAVORITES_ROUTE}>
+                                    <Image
+                                        className={style.NavBarImages}
+                                        src={favorites}>
+                                    </Image>
+                                    <div
+                                        className={style.NavBarFavoritCount} >{favorit.length}</div>
+                                </NavLink>
+                                {isAuth ?
+                                    <Nav>
+                                        <NavLink className={style.icons} to={ADMIN_ROUTE}>Админ панель</NavLink>
+                                        <NavLink
+                                            className={style.icons}
+                                            onClick={() => exitflag()}
+                                            to={SHOP_ROUTE}>Выйти</NavLink>
+                                    </Nav>
+                                    :
+                                    <NavLink
+                                        className={style.icons}
+                                        onClick={() => flag()}
+                                        to={LOGIN_ROUTE}><Image src={user}></Image></NavLink>
+                                }
 
-                            <NavLink
-                                className={style.icons}
-                                to={BASKET_ROUTE}>
-                                <Image className={style.NavBarImages} src={bascer}></Image>
-                                <div className={style.NavBarBasketCount} >{basket.length}</div>
-                            </NavLink>
-                        </div>
-                    </Nav>
+                                <NavLink
+                                    className={style.icons}
+                                    to={BASKET_ROUTE}>
+                                    <Image className={style.NavBarImages} src={bascer}></Image>
+                                    <div className={style.NavBarBasketCount} >{basket.length}</div>
+                                </NavLink>
+                            </div>
+                        </Nav>
                     </Container>
                 </Navbar.Collapse>
             </Container>

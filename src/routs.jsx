@@ -9,6 +9,12 @@ import DevicePages from "./Pages/DevicePages"
 import FavoritesPages from "./Pages/FavoritesPages"
 import SharesPages from "./Pages/SharesPages"
 import ShopPages from "./Pages/ShopPages"
+import X1 from './assets/iconsRoute/X1.png'
+import X2 from './assets/iconsRoute/X2.png'
+import X3 from './assets/iconsRoute/X3.png'
+import X4 from './assets/iconsRoute/X4.png'
+import X5 from './assets/iconsRoute/X5.png'
+import X6 from './assets/iconsRoute/X6.png'
 
 export const privatRoutes = [
     {
@@ -98,3 +104,41 @@ export const navBar =[
     // },
 ]
 
+export const navRouts =[
+    {
+        path: ATVS_ROUTE,
+        element: <ATVSPages/>,
+        name: 'Квадроциклы',
+        img: X1
+    },
+    {
+        path: JETSCIS_ROUTE,
+        element: <Admin/>,
+        name: 'Гидроциклы',
+        img: X2
+    },
+    {
+        path: BOATS_ROUTE,
+        element: <BoatsPagex/>,
+        name: 'Катера',
+        img: X3
+    },
+    {
+        path: SNOWMOBILES_ROUTE,
+        element: <Admin/>,
+        name: 'Снегоходы',
+        img: X4
+    },
+    {
+        path: SPARE_ROUTE,
+        element: <Admin/>,
+        name: 'Вездеходы',
+        img: X6
+    },
+    {
+        path: ENGINES_ROUTE,
+        element: <Admin/>,
+        name: 'Двигатели',
+        img: X5
+    },
+  ]

@@ -1,0 +1,54 @@
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+    height: 130px;
+    padding: 20px;
+}
+.NavText{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    color: #2F3035;
+}
+.NavSubtext{
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    color: #C4C4C4;
+    margin-top: 50px;
+}
+.NavSubtext::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 9px;
+    top: 8px;
+    margin-left: 5px;
+    background-image: url(../assets/ArrowRight.svg);
+}
+
+.Card{
+    width: 30.333333%;
+    margin-bottom: 30px;
+}
+
+.Card + .Card{
+    margin-left: 30px;
+    
+}
+
+.Card:nth-child(4){
+    margin-left: 0;
+}
+
+.Card:hover{
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    transition: all 0.3s;
+   
+}
+
+.Card:hover .NavText{
+    color: #1C62CD;
+
+}

@@ -19,7 +19,7 @@ const BasketPages = () => {
       {basket.length > 0 ? 
       <div>
         {basket.map(bak => 
-          <Cards   key={bak.id} title={bak.title} img={bak.url} price={bak.price} id={bak.id} />
+          <Cards  key={bak.id} title={bak.title} img={bak.url} price={bak.price} id={bak.id} />
           )}  
       </div> 
       :
