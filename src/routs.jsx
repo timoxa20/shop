@@ -142,3 +142,26 @@ export const navRouts =[
         img: X5
     },
   ]
+
+  export const footerRoutes = [
+    {
+        path: ADMIN_ROUTE,
+        element: <Admin/>,
+        name: 'О компаний',
+    },
+    {
+        path: ADMIN_ROUTE,
+        element: <Admin/>,
+        name: 'Контакты',
+    },
+    {
+        path: ADMIN_ROUTE,
+        element: <Admin/>,
+        name: 'Акций',
+    },
+    {
+        path: ADMIN_ROUTE,
+        element: <Admin/>,
+        name: 'Магазины',
+    }
+]

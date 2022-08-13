@@ -1,7 +1,10 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import NavBarIcons from '../component/NavBarIcons'
+import Sale from '../component/Sale/Sale'
 import ShopPageOneBlock from '../component/ShopPageOneBlock'
+import Tabsk from '../component/Tabs'
+import Footer from '../component/footer/Footer'
 
 
 const ShopPages = () => {
@@ -13,6 +16,15 @@ const ShopPages = () => {
         </Col>
         <Col className='mt-5' md={12}>
           <NavBarIcons />
+        </Col>
+        <Col className='mt-5' md={12}>
+          <Tabsk/>
+        </Col>
+        <Col className='mt-5' md={12}>
+          <Sale/>
+        </Col>
+        <Col className='mt-5' md={12}>
+          <Footer/>
         </Col>
       </Row>
     </Container >

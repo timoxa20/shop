@@ -36,19 +36,6 @@ const Cards = ({ img, title, price, id }) => {
     dispatch(addBasketAction(basket))
   }
 
-  // const fetchPostBaskets = () => {
-  //   axios.post('http://localhost:3000/basket', {
-  //     img,
-  //     title,
-  //     price
-  //   })
-  //   .then(function (response) {
-  //     console.log(response);
-  //   })
-  //   .catch(function (error) {
-  //     console.log(error);
-  //   });
-  // }
 
 
 
