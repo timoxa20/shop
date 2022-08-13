@@ -51,7 +51,7 @@ const SideBar = () => {
 
 
     return (
-        <Container>
+        <>
             <Tabs defaultActiveKey="1" onChange={onChange}>
                 <TabPane tab="ПАРАМЕТРЫ" key="1">
                     <Card
@@ -206,7 +206,7 @@ const SideBar = () => {
                 </TabPane>
             </Tabs>
 
-        </Container >
+        </ >
     )
 }
 
