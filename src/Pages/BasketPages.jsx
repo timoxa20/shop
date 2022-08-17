@@ -5,7 +5,6 @@ import Cards from '../component/Cards'
 import style from '../style/Basket.module.css'
 
 import {useDispatch} from 'react-redux'
-import { fetchBaskets } from '../asynsAction/bascet'
 
 const BasketPages = () => {
 

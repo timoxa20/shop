@@ -1,0 +1,38 @@
+.Device{
+    margin-top: 45px;
+}
+
+.DeviceImg{
+    width: 500px;
+    height: 350px;
+}
+
+.DeviceCol{
+    text-align: center;
+}
+
+.DeviceOldPrice{
+    color: #000000;
+    opacity: 0.6;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 17px;
+}
+
+.DeviceNewPrice{
+    color: #2F3035;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.DeviceProductName{
+    
+}
+
+.DeviceType{
+    border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+    padding-bottom: 6px;
+    margin-top: 15px;
+}

@@ -6,14 +6,12 @@ import { Button, Col, Container, Image } from 'react-bootstrap'
 import favoritIcons from '../assets/favoritesIcons.svg'
 import bascetIcons from '../assets/bascetIcons.svg'
 import favoritIconsActiv from '../assets/favoritesBlue.svg'
-import imgCards from '../assets/img.png'
 import { useDispatch, useSelector } from 'react-redux'
 import { addBasketAction } from '../store/BasketStore'
-import { useLocation } from 'react-router-dom'
-import { BASKET_ROUTE } from '../const'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { BASKET_ROUTE, DEVICE_ROUTE } from '../const'
 import { removeBasketAction } from '../store/BasketStore'
 import { addFavoritsAction } from '../store/FavoriteStore'
-import axios from 'axios'
 
 const Cards = ({ img, title, price, id }) => {
 
@@ -26,39 +24,42 @@ const Cards = ({ img, title, price, id }) => {
   const basket = useSelector(state => state.basket.basket)
   const favorit = useSelector(state => state.favorit.favorit)
 
-
-
-  const addToCard = (name) => {
-    const basket = {
-      name,
-      id: Date.now(),
-    }
-    dispatch(addBasketAction(basket))
+  const baskete = {
+    img: img,
+    title: title,
+    price: price,
+    id: Date.now(),
   }
 
+  const addToCard = () => {
+    dispatch(addBasketAction(baskete))
+  }
+  console.log(basket)
 
 
+  const favor = {
+    img,
+    title,
+    price,
+    id: Date.now(),
+  }
 
-  const addToFavorit = (name, img, title, price) => {
-    const favorit = {
-      name,
-      img,
-      title,
-      price,
-      id: Date.now(),
-    }
+  const addToFavorit = () => {
+    
     setFavorite( favoritIconsActiv )
-    dispatch(addFavoritsAction(favorit))
+    dispatch(addFavoritsAction(favor))
   }
 
   const removeToCard = () => {
     dispatch(removeBasketAction(id))
   }
 
+  const historu = useNavigate()
+
   return (
     <Container>
       {bascetPages ?
-        <Card className='mt-3' >
+        <Card id={id} className='mt-3' >
           <div
             className='d-flex'
           >
@@ -89,9 +90,14 @@ const Cards = ({ img, title, price, id }) => {
           </div>
         </Card>
         :
-        <Card
+        <Card  
+        id={id}
           className={style.Cards}
         >
+          <div 
+          className={style.CardsClickId}
+          onClick={() => historu(DEVICE_ROUTE + '/' + id)}
+          >посмотреть товар</div>
           {favorite === favoritIcons ?
           <button 
           onClick={() => addToFavorit()}
@@ -128,9 +134,7 @@ const Cards = ({ img, title, price, id }) => {
           </Button>
         </Card>
       }
-
     </Container>
-
   )
 }
 

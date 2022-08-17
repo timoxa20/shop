@@ -3,11 +3,17 @@ import Admin from "./Pages/Admin"
 import ATVSPages from "./Pages/ATVSPages"
 import Auth from "./Pages/Auth"
 import BasketPages from "./Pages/BasketPages"
-import BoatsPagex from "./Pages/BoatsPagex"
+import BoatsPages from "./Pages/BoatsPages"
 import DeliveryOages from "./Pages/DeliveryOages"
-import DevicePages from "./Pages/DevicePages"
+import DevicePages from "./Pages/DevicePages/DevicePages"
 import FavoritesPages from "./Pages/FavoritesPages"
 import SharesPages from "./Pages/SharesPages"
+import JetscisPages from './Pages/JetscisPages'
+import BoatPages from './Pages/BoatPages'
+import AlterraPages from './Pages/AlterraPages'
+import SnowPages from './Pages/SnowPages'
+import EnginesPages from './Pages/EnginesPages'
+import SharePages from './Pages/SharePages'
 import ShopPages from "./Pages/ShopPages"
 import X1 from './assets/iconsRoute/X1.png'
 import X2 from './assets/iconsRoute/X2.png'
@@ -69,39 +75,39 @@ export const navBar =[
     },
     {
         path: BOATS_ROUTE,
-        element: <BoatsPagex/>,
+        element: <BoatsPages/>,
         name: 'Катера',
     },
-    // {
-    //     path: JETSCIS_ROUTE,
-    //     element: <Admin/>,
-    //     name: 'Гидроциклы',
-    // },
-    // {
-    //     path: BOAT_ROUTE,
-    //     element: <Admin/>,
-    //     name: 'Лодки',
-    // },
-    // {
-    //     path: ALLTERRAINVEHICLES_ROUTE,
-    //     element: <Admin/>,
-    //     name: 'Вездеходы',
-    // },
-    // {
-    //     path: SNOWMOBILES_ROUTE,
-    //     element: <Admin/>,
-    //     name: 'Снегоходы'
-    // },
-    // {
-    //     path: ENGINES_ROUTE,
-    //     element: <Admin/>,
-    //     name: 'Двигатели'
-    // },
-    // {
-    //     path: SPARE_ROUTE,
-    //     element: <Admin/>,
-    //     name: 'Запчасти'
-    // },
+    {
+        path: JETSCIS_ROUTE,
+        element: <JetscisPages/>,
+        name: 'Гидроциклы',
+    },
+    {
+        path: BOAT_ROUTE,
+        element: <BoatPages/>,
+        name: 'Лодки',
+    },
+    {
+        path: ALLTERRAINVEHICLES_ROUTE,
+        element: <AlterraPages/>,
+        name: 'Вездеходы',
+    },
+    {
+        path: SNOWMOBILES_ROUTE,
+        element: <SnowPages/>,
+        name: 'Снегоходы'
+    },
+    {
+        path: ENGINES_ROUTE,
+        element: <EnginesPages/>,
+        name: 'Двигатели'
+    },
+    {
+        path: SPARE_ROUTE,
+        element: <SharePages/>,
+        name: 'Запчасти'
+    },
 ]
 
 export const navRouts =[
@@ -119,7 +125,7 @@ export const navRouts =[
     },
     {
         path: BOATS_ROUTE,
-        element: <BoatsPagex/>,
+        element: <BoatsPages/>,
         name: 'Катера',
         img: X3
     },

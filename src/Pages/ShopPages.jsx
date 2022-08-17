@@ -23,9 +23,6 @@ const ShopPages = () => {
         <Col className='mt-5' md={12}>
           <Sale/>
         </Col>
-        <Col className='mt-5' md={12}>
-          <Footer/>
-        </Col>
       </Row>
     </Container >
   )

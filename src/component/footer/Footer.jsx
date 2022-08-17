@@ -22,7 +22,7 @@ const footer = () => {
                     <Col md={3} className={style.FooterInfo}>
                         <TitleFooter title={'Информация'} />
                         {footerRoutes.map(({ path, name }) =>
-                            <NavLink to={path}>
+                            <NavLink key={name} to={path}>
                                 <Col md={12}>
                                     {name}
                                 </Col>
@@ -32,7 +32,7 @@ const footer = () => {
                     <Col md={3} className={style.FooterInfo}>
                         <TitleFooter title={'Интернет-магазин'} />
                         {footerRoutes.map(({ path, name }) =>
-                            <NavLink to={path}>
+                            <NavLink key={name} to={path}>
                                 <Col md={12}>
                                     {name}
                                 </Col>

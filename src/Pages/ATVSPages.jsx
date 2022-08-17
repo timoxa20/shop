@@ -1,21 +1,13 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import ShopContainer from '../component/ShopContainer'
-import SideBar from '../component/SideBar'
+import { useSelector } from 'react-redux'
+import PagesMap from '../component/PagesMap'
 
 const ATVSPages = () => {
-  return (
-    <Container>
-      <Row className='mt-4'>
-        <Col md={3}>
-          <SideBar  />
-        </Col >
-        <Col md={9} style={{marginTop: '62px'}}>
-        <ShopContainer/>
-        </Col>
-      </Row>
 
-    </Container>
+  const productAtvs = useSelector(state => state.product.atvs)
+
+  return (
+    <PagesMap productName={productAtvs}/>
   )
 }
 

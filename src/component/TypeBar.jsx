@@ -1,12 +1,13 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Navbar, Container, Nav } from 'react-bootstrap'
-import { ATVS_ROUTE, BOATS_ROUTE } from '../const'
 import { NavLink } from 'react-router-dom'
 import style from '../style/NavBar.module.css'
 
 const TypeBar = () => {
 
+    const device = useSelector(state => state.device)
+    console.log(device)
 
     return (
         <Navbar
@@ -17,56 +18,11 @@ const TypeBar = () => {
             variant="light">
             <Container>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="me-auto align-items-center">
-                    <NavLink
-                        className={style.NavBar}
-                        to={ATVS_ROUTE}
-                    >
-                        Квадроциклы
-                    </NavLink>
-                    <NavLink
-                        className={style.NavBar}
-                        to={BOATS_ROUTE}
-                    >
-                        Катера
-                    </NavLink>
-                    <NavLink
-                        className={style.NavBar}
-                        to={ATVS_ROUTE}
-                    >
-                        Квадроциклы
-                    </NavLink>
-                    <NavLink
-                        className={style.NavBar}
-                        to={BOATS_ROUTE}
-                    >
-                        Катера
-                    </NavLink>
-                    <NavLink
-                        className={style.NavBar}
-                        to={ATVS_ROUTE}
-                    >
-                        Квадроциклы
-                    </NavLink>
-                    <NavLink
-                        className={style.NavBar}
-                        to={BOATS_ROUTE}
-                    >
-                        Катера
-                    </NavLink>
-                    <NavLink
-                        className={style.NavBar}
-                        to={ATVS_ROUTE}
-                    >
-                        Квадроциклы
-                    </NavLink>
-                    <NavLink
-                        className={style.NavBar}
-                        to={BOATS_ROUTE}
-                    >
-                        Катера
-                    </NavLink>
+                <Navbar.Collapse className='justify-content-around' id="responsive-navbar-nav">
+                <Nav className=" align-items-center ">
+                    {device.map(({id, name, to}) => 
+                    <NavLink key={id} className={style.NavBar} to={to}>{name}</NavLink>
+                    )}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -6,6 +6,7 @@ import NavBar from "./component/NavBar";
 import TypeBar from "./component/TypeBar";
 import Cards from "./component/Cards";
 import './App.css'
+import Footer from "./component/footer/Footer";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <NavBar/>
         <TypeBar/>
         <AppRoures />
+        <Footer/>
       </Provider>
     </BrowserRouter>
   );

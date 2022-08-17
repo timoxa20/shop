@@ -4,17 +4,19 @@ import Cards from '../Cards'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { useFetching } from '../hooks/MyFetchSlider';
 import { Carousel } from '../Carousel';
+import { useSelector } from 'react-redux';
 
 const PopulSlide = () => {
+
+    const atvs = useSelector(state => state.slider.atvs)
 
 
     return (
         <div>
             
             <Carousel>
-                {useFetching('populSpare').map(({url, title, price, id}) =>
+                {atvs.map(({url, title, price, id}) =>
                     <SwiperSlide key={id} >
                         <Cards img={url} title={title} price={price} id={id} />
                     </SwiperSlide>
