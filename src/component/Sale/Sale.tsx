@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Image } from 'react-bootstrap'
-import imagesSale from '../../assets/images.png'
+import imagesSale from '../../shared/assets/images.png'
 
 
 const Sale = () => {

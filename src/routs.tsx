@@ -15,12 +15,12 @@ import SnowPages from './Pages/SnowPages'
 import EnginesPages from './Pages/EnginesPages'
 import SharePages from './Pages/SharePages'
 import ShopPages from "./Pages/ShopPages"
-import X1 from './assets/iconsRoute/X1.png'
-import X2 from './assets/iconsRoute/X2.png'
-import X3 from './assets/iconsRoute/X3.png'
-import X4 from './assets/iconsRoute/X4.png'
-import X5 from './assets/iconsRoute/X5.png'
-import X6 from './assets/iconsRoute/X6.png'
+import X1 from './shared/assets/iconsRoute/X1.png'
+import X2 from './shared/assets/iconsRoute/X2.png'
+import X3 from './shared/assets/iconsRoute/X3.png'
+import X4 from './shared/assets/iconsRoute/X4.png'
+import X5 from './shared/assets/iconsRoute/X5.png'
+import X6 from './shared/assets/iconsRoute/X6.png'
 
 export const privatRoutes = [
     {

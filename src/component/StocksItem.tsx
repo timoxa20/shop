@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
-import dvijoc from '../assets/dvigatel.png'
+import dvijoc from '../shared/assets/dvigatel.png'
 import Stock from '../style/ctock.module.css'
 
 

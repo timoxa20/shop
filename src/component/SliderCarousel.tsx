@@ -1,6 +1,6 @@
 import React from 'react'
 import {  Carousel } from 'react-bootstrap'
-import slider from '../assets/slider.jpg'
+import slider from '../shared/assets/slider.jpg'
 
 const SliderCarousel = () => {
     return (

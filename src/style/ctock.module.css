@@ -32,7 +32,7 @@
     position: absolute;
     width: 15px;
     height: 18px;
-    background-image: url('../assets/icons.svg');
+    background-image: url('../shared/assets/icons.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@
     position: absolute;
     top: 7px;
     right: -10px;
-    background-image: url('../assets/iconss.svg');
+    background-image: url('../shared/assets/iconss.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

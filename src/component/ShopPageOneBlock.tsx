@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Col, Carousel, Row, ThemeProvider } from 'react-bootstrap'
-import slider from '../assets/slider.jpg'
+import slider from '../shared/assets/slider.jpg'
 import Cards from './Cards'
 import Stock from '../component/Stocks'
 import SliderCarousel from '../component/SliderCarousel'
