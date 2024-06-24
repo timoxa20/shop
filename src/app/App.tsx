@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { store } from "../store/store";
 import NavBar from "../component/NavBar";
 import TypeBar from "../component/TypeBar";
-import './App.css'
+import cls from './App.module.scss'
 import Footer from "../component/footer/Footer";
 
 
@@ -12,7 +12,8 @@ function App() {
   return (
       <BrowserRouter >
           <Provider store={store} >
-              <NavBar/>
+              <NavBar />
+              <div className={cls.App}></div>
               <TypeBar/>
               <AppRoures />
               <Footer/>

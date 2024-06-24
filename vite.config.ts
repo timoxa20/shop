@@ -9,4 +9,11 @@ export default defineConfig({
     build: {
         outDir: 'dist',
     },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `$injectedColor: orange;` // Пример: можно добавить глобальные переменные
+            },
+        },
+    },
 });
