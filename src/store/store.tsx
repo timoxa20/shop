@@ -1,21 +1,8 @@
-import { applyMiddleware, combineReducers } from "redux"
-import { deviceReducer } from "./DeviceStore"
-import { userReducer } from "./UserStore"
-import { createStore } from "redux"
-import { basketReducer } from "./BasketStore"
-import { composeWithDevTools } from "redux-devtools-extension"
-import thunk from "redux-thunk"
-import { favoritStore } from "./FavoriteStore"
-import { sliderReducer } from "./SliderAction"
-import { produstReducer } from "./ProductAction"
+import { configureStore } from '@reduxjs/toolkit'
+import rootReducer from './reducers'
 
-const rootReducer = combineReducers({
-    user: userReducer,
-    device: deviceReducer,
-    basket: basketReducer,
-    favorit: favoritStore,
-    slider: sliderReducer,
-    product: produstReducer
+const store = configureStore({
+    reducer: rootReducer,
 })
 
-export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)) )
+export default store
