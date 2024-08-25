@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import AppRoures from "../component/AppRoures";
 import { Provider } from "react-redux";
-import { store } from "../store/store";
+import { store } from "./StoreProvider/config/store";
 import NavBar from "../component/NavBar";
 import TypeBar from "../component/TypeBar";
 import cls from './App.module.scss'
