@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit'
-import rootReducer from './reducers'
+import {configureStore, ReducersMapObject} from '@reduxjs/toolkit'
+import {StateSchema} from "./StateShema";
 
-const store = configureStore({
+export const store = configureStore({
     reducer:{},
 })
+export function createReduxStore  (
+    initialState: StateSchema | undefined,
+    asyncReducers?: Partial<ReducersMapObject<StateSchema>>,
+) {
 
-export default store
+}
