@@ -1,11 +1,11 @@
 import { BrowserRouter } from "react-router-dom";
-import AppRoures from "../component/AppRoures";
+import AppRoures from "../shared/component/AppRoures";
 import { Provider } from "react-redux";
 import { store } from "./StoreProvider/config/store";
-import NavBar from "../component/NavBar";
-import TypeBar from "../component/TypeBar";
+import NavBar from "../shared/component/NavBar";
+import TypeBar from "../shared/component/TypeBar";
 import cls from './App.module.scss'
-import Footer from "../component/footer/Footer";
+import Footer from "../shared/component/footer/Footer";
 
 
 function App() {

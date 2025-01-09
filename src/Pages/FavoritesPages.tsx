@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { fetchFavorit } from '../asynsAction/favorit'
-import style from '../style/Basket.module.css'
+import style from '../style/Basket.module.scss'
 import Cards from '../component/Cards'
 
 

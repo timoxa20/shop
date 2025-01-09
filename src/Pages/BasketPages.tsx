@@ -2,7 +2,7 @@ import React, { useEffect, useMemo } from 'react'
 import { Container } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import Cards from '../component/Cards'
-import style from '../style/Basket.module.css'
+import style from '../style/Basket.module.scss'
 
 import {useDispatch} from 'react-redux'
 

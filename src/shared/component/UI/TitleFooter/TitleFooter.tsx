@@ -1,5 +1,5 @@
 import React from 'react'
-import style from '../TitleFooter/TitleFooter.module.css'
+import style from './TitleFooter.module.scss'
 
 const TitleFooter = ({title}) => {
   return (

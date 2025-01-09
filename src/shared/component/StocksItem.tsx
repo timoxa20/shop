@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
 import dvijoc from '../shared/assets/dvigatel.png'
-import Stock from '../style/ctock.module.css'
+import Stock from '../style/ctock.module.scss'
 
 
 const StocksItem = ({ value }) => {

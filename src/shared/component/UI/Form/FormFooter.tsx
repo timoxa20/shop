@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import style from './FormFooter.module.css'
+import style from './FormFooter.module.scss'
 
 const FormFooter = () => {
     const [value, setValue] = useState('')

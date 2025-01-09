@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
-import style from '../style/NavBar.module.css'
+import style from '../style/NavBar.module.scss'
 
 const TypeBar = () => {
 

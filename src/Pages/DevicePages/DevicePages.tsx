@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
-import style from './DevicePages.module.css'
+import style from './DevicePages.module.scss'
 import { Tabs} from 'antd'
 
 const { TabPane } = Tabs;
